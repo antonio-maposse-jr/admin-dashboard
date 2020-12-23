@@ -13,7 +13,7 @@ class ClientsController extends Controller
     public function store(Request $request)
     {
         $client = new Clients();
-        $client_exists = Client::where('phone', $request->input_phone)->exists();
+        $client_exists = Clients::where('phone', $request->input_phone)->exists();
         if (!$client_exists){
             $client->name = $request->input_name;
             $client->surname = $request->input_surname;
