@@ -31,4 +31,10 @@ class ClientsController extends Controller
 
     }
 
+
+    public function index(){
+        $clients = Clients::all();
+
+        return view('dashboard.index', ['clients'=>$clients]);
+    }
 }

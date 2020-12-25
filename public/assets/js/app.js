@@ -3,7 +3,7 @@
  Author: Themesbrand
  Website: www.themesbrand.com
  File: Main js
-*/
+ */
 
 
 !function($) {
@@ -30,6 +30,7 @@
             touchScrollStep: 50
         });
     },
+
     MainApp.prototype.initMetisMenu = function () {
         //metis menu
         $("#side-menu").metisMenu();
